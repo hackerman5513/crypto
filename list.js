@@ -41,6 +41,9 @@
         x = x.split('\n')
         for (let i = 0; i < x.length; i++)
           main(x[i])
+        
+        buff = buff.sort( (a,b)=>b[0]-a[0] )
+        
         for (let i = 0; i < buff.length; i++) {
           let e = buff[i]
           document.body.innerHTML += +e[0] + " " + e[1] + " " + e[2] + "<br>"
